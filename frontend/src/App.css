@@ -1,0 +1,49 @@
+
+html, body, #root, .App {
+  height: 100%;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.drag-n-drop {
+  padding: .5rem;
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(auto-fill, 32%);
+
+}
+.dnd-group {
+  background-color: #444649;
+  border-radius: 5px;
+  padding: .5rem;
+  height:350px;
+  overflow:scroll;
+}
+.dnd-item {
+  border-radius: 5px;
+  display: flex;
+  flex-Direction:'row';
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-weight: bold;
+  float: left;
+}
+.dnd-item:not(:last-of-type) {
+  margin-bottom: .5rem;
+  margin-right: .2rem;
+}
+.dnd-item * {  
+  font-size: 1.2rem;
+}
+
+
